@@ -10,7 +10,7 @@ Offer a simpler, more efficient solution for input error handling, replacing rep
 
 ## How does it work? :thinking:
 
-## Parameters
+### Parameters
 
 Basically, it has 3 parameters:
 
@@ -68,7 +68,7 @@ int numConditionWith0(char* input){
 }
 ```
 
-## Why does the 0 matter?
+### Why does the 0 matter?
 
 In C, the atoi function (which converts a string to a number) returns 0 if the input string doesn’t contain a number.
 
@@ -83,7 +83,7 @@ printf("the string 'abc' converted to a number prints out: %d", num);
 
 See the problem here? It returns the same result as the string “0”.
 
-## Menu Example
+### Menu Example
 
 The menu is the most common use case for the inputHandle function, if you want the user to input a choice for a menu (where the prompt would be 1-Start 2-Quit ), you would need to write something like this:
 
