@@ -83,7 +83,7 @@ printf("the string 'abc' converted to a number prints out: %d", num);
 
 See the problem here? It returns the same result as the string “0” would.
 
-### Menu Example
+### Menu example
 
 The menu is the most common use case for the inputHandle function, if you want the user to input a choice for a menu (where the prompt would be 1-Start 2-Quit ), you would need to write something like this:
 
