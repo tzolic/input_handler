@@ -1,26 +1,37 @@
+/*
+=============================================================================
+Name        : Input Handler
+Author      : tzolic
+Description : A function that handles user input length and condition errors.
+=============================================================================
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
-//function prototypes
+/*----------function prototypes----------*/
 
-char* inputHandle(char* prompt, char* error_prompt, int (*condition)(char* input));
+char* inputHandler(char* prompt, char* error_prompt, int (*condition)(char* input));
+int charCondition(char* input);
 int numConditionNo0(char* input);
 int numConditionWith0(char* input);
-int charCondition(char* input);
+
+/*----------main function----------*/
 
 int main(void){
 
-  char* answer = inputHandle("prompt:\n", "error prompt:\n", charCondition);
+  char* answer = inputHandler("prompt:\n", "error prompt:\n", charCondition);
+  
+  free(answer);
+  answer = NULL;
+
   return 0;
 }
 
+/*----------input handle function----------*/
 
-/*
-input handle function
-*/
-
-char* inputHandle(char* prompt, char* error_prompt, int (*condition)(char* input))
+char* inputHandler(char* prompt, char* error_prompt, int (*condition)(char* input))
 {
   //choose initial buffer size
   size_t buffer_size = 300;
@@ -89,7 +100,7 @@ char* inputHandle(char* prompt, char* error_prompt, int (*condition)(char* input
 }
 
 
-//all condition templates sorted from simplest to most complex
+/*-----------all condition templates sorted from simplest to most complex------------*/
 
 int charCondition(char* input){
   if(strcmp("1", input) == 0){
@@ -108,7 +119,7 @@ int numConditionNo0(char* input){
 
 int numConditionWith0(char* input){
   int num = atoi(input);
-  //normal condition && num != 0) || (num == 0 && strcmp("0",input) == 0))
+  //(your condition && num != 0) || (num == 0 && strcmp("0",input) == 0)
   if((num <= 20 && num != 0) || (num == 0 && strcmp("0", input) == 0)){
     return 1;
   }
