@@ -122,4 +122,3 @@ int numConditionWith0(char* input){
   }
   return 0;
 }
-
