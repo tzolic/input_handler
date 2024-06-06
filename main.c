@@ -29,7 +29,7 @@ int main(void){
   return 0;
 }
 
-/*----------input handle function----------*/
+/*----------input handler function----------*/
 
 char* inputHandler(char* prompt, char* error_prompt, int (*condition)(char* input))
 {
