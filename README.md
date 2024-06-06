@@ -81,7 +81,7 @@ printf("the string 'abc' converted to a number prints out: %d", num);
 //it will print 0
 ```
 
-See the problem here? It returns the same result as the string “0”.
+See the problem here? It returns the same result as the string “0” would.
 
 ### Menu Example
 
