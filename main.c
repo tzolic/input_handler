@@ -22,9 +22,6 @@ int numConditionWith0(char* input);
 int main(void){
 
   char* answer = inputHandler("prompt:\n", "error prompt:\n", charCondition);
-  
-  free(answer);
-  answer = NULL;
 
   return 0;
 }
