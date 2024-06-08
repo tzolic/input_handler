@@ -18,7 +18,7 @@ Basically, it has 3 parameters:
 - the error prompt
 - the condition function
 
-its function prototype is:
+Its function prototype is:
 
 ```c
 char* answer = inputHandler("prompt", "error prompt", functionCondition);
