@@ -1,8 +1,4 @@
-# Input Handler
-
-## Description 🔍
-
-A function that handles user input length and condition errors.
+# Input Handler 👨‍🔧
 
 ## Purpose 🎯
 
