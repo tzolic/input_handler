@@ -11,7 +11,9 @@ Offer a simpler, more efficient solution for input error handling, replacing rep
 Basically, it has 3 parameters:
 
 - the prompt
+  
 - the error prompt
+  
 - the condition function
 
 Its function prototype is:
@@ -91,4 +93,4 @@ The user input is stored in the variable “answer”.
 
 ## Demo 👁️
 
-https://onlinegdb.com/PoeLtN-ea
+# https://onlinegdb.com/PoeLtN-ea
