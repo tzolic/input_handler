@@ -40,8 +40,7 @@ char* inputHandler(char* prompt, char* error_prompt, int (*condition)(char* inpu
 
   //allocate dynamically memory input buffer
   char* input = (char*)malloc(buffer_size * sizeof(char));
-  if (input == NULL)
-  {
+  if (input == NULL){
       fprintf(stderr, "Memory allocation failed!");
       exit(1);
   }
@@ -71,8 +70,7 @@ char* inputHandler(char* prompt, char* error_prompt, int (*condition)(char* inpu
   }
 
   //handle condition error
-  while(condition(input) == 0)
-  {
+  while(condition(input) == 0){
     printf("\033[1;31m");
     //error prompt
     printf("%s", error_prompt);
