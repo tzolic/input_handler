@@ -1,9 +1,9 @@
 /*
-=============================================================================
-Name        : Input Handler
-Author      : tzolic
-Description : A function that handles user input length and condition errors.
-=============================================================================
+============================================================================
+Name       : Input Handler
+Author     : tzolic
+Description: A function that handles user input length and condition errors.
+============================================================================
 */
 
 #include <stdio.h>
