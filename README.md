@@ -1,5 +1,9 @@
 # Input Handler 👨‍🔧
 
+## Description 🔍
+
+A function that handles user input length and condition errors.
+
 ## Purpose 🎯
 
 Offer a simpler, more efficient solution for input error handling, replacing repetitive while-loop approaches.
@@ -11,7 +15,7 @@ Offer a simpler, more efficient solution for input error handling, replacing rep
 Basically, it has 3 parameters:
 
 - the prompt
-  
+
 - the error prompt
   
 - the condition function
