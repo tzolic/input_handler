@@ -34,8 +34,7 @@ int main(void){
 
 /*----------input handler function----------*/
 
-char* inputHandler(char* prompt, char* error_prompt, int (*condition)(char* input))
-{
+char* inputHandler(char* prompt, char* error_prompt, int (*condition)(char* input)){
   //choose initial buffer size
   size_t buffer_size = 300;
 
