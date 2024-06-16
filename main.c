@@ -10,6 +10,10 @@ Description : A function that handles user input length and condition errors.
 #include <stdlib.h>
 #include <string.h>
 
+
+
+
+
 /*----------function prototypes----------*/
 
 char* inputHandler(char* prompt, char* error_prompt, int (*condition)(char* input));
@@ -17,7 +21,9 @@ int charCondition(char* input);
 int numConditionNo0(char* input);
 int numConditionWith0(char* input);
 
-/*----------main function----------*/
+
+
+
 
 int main(void){
 
@@ -55,12 +61,10 @@ char* inputHandler(char* prompt, char* error_prompt, int (*condition)(char* inpu
     int c;
     while ((c = getchar()) != '\n' && c != EOF);
 
-    //change text color to red in terminal
     printf("\033[1;31m");
     //length error prompt
     printf("Length error! Input exceeds maximum input limit. Please enter a shorter input:\n");
     fflush(stdout);
-    //reset to black color in terminal
     printf("\033[0m");
 
     fgets(input, buffer_size, stdin);
@@ -95,6 +99,8 @@ char* inputHandler(char* prompt, char* error_prompt, int (*condition)(char* inpu
   }
   return input;
 }
+
+
 
 
 /*-----------all condition templates sorted from simplest to most complex------------*/
