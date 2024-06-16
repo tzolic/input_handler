@@ -23,7 +23,7 @@ Basically, it has 3 parameters:
 Its function prototype is:
 
 ```c
-char* answer = inputHandler("prompt", "error prompt", functionCondition);
+char* answer = inputHandler("Prompt", "Error prompt", functionCondition);
 ```
 
 The condition function has 3 possible cases:

@@ -27,7 +27,7 @@ int numConditionWith0(char* input);
 
 int main(void){
 
-  char* answer = inputHandler("prompt:\n", "error prompt:\n", charCondition);
+  char* answer = inputHandler("Prompt:\n", "Error prompt:\n", charCondition);
 
   return 0;
 }
