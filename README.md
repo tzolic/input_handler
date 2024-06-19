@@ -1,4 +1,4 @@
-# Input Handler 👨‍🔧
+# Input Handler
 
 ## Description 🔍
 
