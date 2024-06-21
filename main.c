@@ -15,7 +15,6 @@ Description: A function that handles user input length and condition errors.
 
 
 /*----------function prototypes----------*/
-
 char* inputHandler(char* prompt, char* error_prompt, int (*condition)(char* input));
 int charCondition(char* input);
 int numConditionNo0(char* input);
@@ -33,7 +32,6 @@ int main(void){
 }
 
 /*----------input handler function----------*/
-
 char* inputHandler(char* prompt, char* error_prompt, int (*condition)(char* input)){
   //choose initial buffer size
   size_t buffer_size = 300;
@@ -101,7 +99,6 @@ char* inputHandler(char* prompt, char* error_prompt, int (*condition)(char* inpu
 
 
 /*-----------all condition templates sorted from simplest to most complex------------*/
-
 int charCondition(char* input){
   if(strcmp("1", input) == 0){
     return 1;
