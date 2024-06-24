@@ -116,7 +116,7 @@ int numConditionNo0(char* input){
 
 int numConditionWith0(char* input){
   int num = atoi(input);
-  //(your condition && num != 0) || (num == 0 && strcmp("0",input) == 0)
+  //(your condition excluding 0 && num != 0) || (num == 0 && strcmp("0",input) == 0)
   if((num <= 20 && num != 0) || (num == 0 && strcmp("0", input) == 0)){
     return 1;
   }
