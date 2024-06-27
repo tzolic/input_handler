@@ -58,7 +58,9 @@ char* inputHandler(char* prompt, char* error_prompt, int (*condition)(char* inpu
     while ((c = getchar()) != '\n' && c != EOF);
 
     //length error prompt
-    printf("\033[1;31mLength error! Input exceeds maximum input limit. Please enter a shorter input:\n\033[0m");
+    printf("\033[1;31m");
+    printf("Length error! Input exceeds maximum input limit. Please enter a shorter input:\n");
+    printf("\033[0m");
     fflush(stdout);
 
     fgets(input, buffer_size, stdin);
@@ -80,8 +82,10 @@ char* inputHandler(char* prompt, char* error_prompt, int (*condition)(char* inpu
     while((strlen(input) + 2) >= buffer_size){
       int c;
       while ((c = getchar()) != '\n' && c != EOF);
-
-      printf("\033[1;31mLength error! Input exceeds maximum input limit. Please enter a shorter input:\n\033[0m");
+      
+      printf("\033[1;31m");
+      printf("Length error! Input exceeds maximum input limit. Please enter a shorter input:\n");
+      printf("\033[0m");
       fflush(stdout);
 
       fgets(input, buffer_size, stdin);
