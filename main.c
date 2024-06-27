@@ -43,7 +43,7 @@ char* inputHandler(char* prompt, char* error_prompt, int (*condition)(char* inpu
       exit(1);
   }
 
-  //display prompt
+  //prompt
   printf("%s", prompt);
   fflush(stdout);
 
