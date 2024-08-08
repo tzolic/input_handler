@@ -4,11 +4,11 @@
 
 Basically, it has 3 parameters:
 
-- the prompt
+- The prompt
 
-- the error prompt
+- The error prompt
   
-- the condition function
+- The condition function
 
 Its function prototype is:
 
