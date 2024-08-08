@@ -80,7 +80,7 @@ See the problem here? It returns the same result as the string “0” would.
 The menu is the most common use case for the inputHandle function, if you want the user to input a choice for a menu (where the prompt would be 1-Start 2-Quit ), you would need to write something like this:
 
 ```c
-char* answer = inputHandler("1-Start\n2-Quit\nEnter your choice:\n", "Error! Please enter a number between 1 and 2:\n", menuCondition);
+char* answer = inputHandler("1-Start\n2-Quit\nEnter your choice:\n", "Input Error!\n1-Start\n2-Quit\nEnter your choice:\n", menuCondition);
 ```
 
 The user input is stored in the variable “answer”.
