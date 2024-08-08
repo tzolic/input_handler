@@ -1,15 +1,5 @@
 # Input Handler
 
-## Description 🔍
-
-A function that handles user input length and condition errors.
-
-## Purpose 🎯
-
-Offer a simpler, more efficient solution for input error handling, replacing repetitive while-loop approaches.
-
-## How does it work? 🤔
-
 ### Parameters
 
 Basically, it has 3 parameters:
@@ -94,7 +84,3 @@ char* answer = inputHandler("1-Start\n2-Quit\nEnter your choice:\n", "Error! Ple
 ```
 
 The user input is stored in the variable “answer”.
-
-## Demo 👁️
-
-# https://onlinegdb.com/ugnKjRObV
